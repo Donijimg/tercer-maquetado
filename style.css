@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin:0%; 
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+   height: 100%;
+   width: 100%;
+   font-size: 16px
+}
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyann: hsl(179, 50%, 55%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --white:hsl(0, 0%, 100%);
+    --GrayishBluel: hsl(220, 15%, 88%);
+}
+   
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: var(--LightGray);
+    display: grid;
+    justify-items: center;
+    align-content:center;
+    
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    padding-top: 30px;
+}
+.attribution a{
+    color:var(--Cyan);
+}.container{
+    display: grid;
+     grid-template-areas: 
+     'area1 area1'
+     'area2 area3';
+     height: 475px;
+     width: 630px;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 1fr 1fr;
+    
+   
+}
+
+.oneblock{
+    grid-area: area1;
+width: auto;
+    height:215px ;
+    padding: 38px;
+    color: var(--GrayishBlue);
+    background-color: var(--white);
+    border-top-right-radius:16px ;
+    border-top-left-radius:16px ;
+
+}
+
+.twoblock{
+    grid-area: area2;
+    width: auto;
+    height:259px ;
+    padding:38px;
+    color: var(--LightGray);
+    background-color: var(--Cyan);
+    border-bottom-left-radius:16px ;
+
+}
+.treeblock{
+    grid-area: area3;
+    width: auto;
+    height:259px ;
+    padding:38px;
+    color: var(--LightGray);
+    background-color:var(--Cyann);
+    border-bottom-right-radius: 16px;
+
+    }
+
+h2{
+    padding-bottom:25px;
+    color: var(--Cyan);
+}
+h3{
+    padding-bottom:18px ;
+    color: var(--BrightYellow);
+}
+.separador{
+display: flex;
+align-items: center;;
+padding-bottom: 10px;
+}
+.simbol{
+font-size: 32px;
+font-weight: 700;
+color:var(--white);
+}
+.text{
+    padding-left: 10px;
+    color: var(--GrayishBluel);
+}
+.parrafo2{
+    padding-bottom: 30px;
+    color: var(--LightGray);
+
+}
+button{
+    width:240px ;
+    height: 49px;
+    background-color: var(--BrightYellow);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+
+}
+.p{
+    padding-bottom: 4px;
+
+}
+.title{
+    color: var(--white);
+}
+
+    
+/*MOBILE*/
+@media (max-width:425px){
+body{
+    padding:150 0;
+}
+.container{
+        display: grid;
+         grid-template-areas: 
+         'area1'
+         'area2'
+         'area3';
+         height: 500px;
+         width: 381px;
+         grid-template-columns: 100%;
+         grid-template-rows: 1fr;
+     }
+     
+.oneblock{
+    grid-area: area1;
+    height: 250px;
+    padding: 38px;
+    color: var(--GrayishBlue);
+    background-color: var(--white);
+    display: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius:16px ;
+    border-top-left-radius:16px ;
+
+}
+
+.twoblock{
+    grid-area: area2;
+    height:250px ;
+    padding:38px;
+    color: var(--LightGray);
+    background-color: var(--Cyan);
+    display: column;
+    justify-content: center;
+    align-items: center; 
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius:0 ;
+
+}
+.treeblock{
+    grid-area: area3;
+    height:250px ;
+    padding:38px;
+    color: var(--LightGray);
+    background-color:var(--Cyann);
+    display: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius:16px ;
+
+    }
+
+h2{
+    padding-bottom:25px;
+    color: var(--Cyan);
+}
+h3{
+    padding-bottom:18px ;
+    color: var(--BrightYellow);
+}
+.separador{
+display: flex;
+align-items: center;;
+padding-bottom: 10px;
+}
+.simbol{
+font-size: 32px;
+font-weight: 700;
+color:var(--white);
+}
+.text{
+    padding-left: 10px;
+    color: var(--GrayishBluel);
+}
+.parrafo2{
+    padding-bottom: 30px;
+    color: var(--LightGray);
+
+}
+button{
+    width:300px ;
+    height: 49px;
+    background-color: var(--BrightYellow);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.p{
+    padding-bottom: 4px;
+
+}
+.title{
+    color: var(--white);
+}
+}
